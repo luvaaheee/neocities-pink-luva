@@ -1,0 +1,202 @@
+body {
+  background: url(https://file.garden/ZdmNLegxzVCR-8F4/backgrounds/tumblr_f81d86a7b72bdd4b58fb97aaa9f051ac_ae788eaf_540.png) repeat fixed;
+  font-family: monospace;
+  padding: 5px;
+  font-size: 10px;
+}
+
+.parent {  
+  position: relative;
+  display: grid; 
+  grid-template-columns: 0.7fr 1.3fr 1fr 1fr 1fr 1fr; 
+  grid-template-rows: 0.5fr 1.5fr 0.7fr 1.3fr 1.4fr 0.6fr; 
+  gap: 5px 5px; 
+  align-items: start; 
+  width: 600px; 
+  height: 500px; 
+  margin: auto;
+}
+
+.sidebar { grid-area: 2 / 1 / 4 / 2; }
+.footer { grid-area: 6 / 2 / 7 / 7; }
+.content { grid-area: 2 / 2 / 6 / 5; }
+.chatbox { grid-area: 2 / 5 / 6 / 7; }
+.webring { grid-area: 4 / 1 / 6 / 2; }
+
+a {
+    color: white;
+}
+
+a:visited {
+    color: red;
+}
+
+a:hover{
+    color:rgba(255, 0, 41, 0.9);
+    text-shadow: rgb(255, 3, 39) 2.5px 0 2px;
+}
+
+.counter {
+  border: 1px solid red;
+  background-color: black;
+  padding: 5px;
+  position: absolute;
+  right: -90px;
+  top: 200px;
+  z-index: 3;
+}
+
+.money {
+  position: absolute;
+  width: 140px;
+  right: -30px;
+  bottom: -100px;
+  z-index: 3;
+}
+
+.smiley {
+  position: absolute;
+  width: 250px;
+  right: -150px;
+  bottom: -90px;
+  z-index: 2;
+}
+
+.phonekill {
+  width: 90px;
+  position: absolute;
+  right: -70px;
+  top: 20px;
+  z-index: 2;
+}
+
+.kibby {
+  width: 100px;
+  position:absolute;
+  left: 50px;
+  bottom: -3px;
+  z-index: 3;
+}
+
+.heart {
+  width: 50px;
+  position:absolute;
+  right: -80px;
+  top: 70px;
+}
+
+.gang {
+  position: absolute;
+  width: 130px;
+  top: -5px;
+  right: 20px;
+  z-index:4;
+}
+
+.content{
+  background: black;
+  color: white;
+  border: 1PX solid red;
+  padding: 20px;
+  height: 350px;
+  overflow: scroll;
+  z-index: 1;
+} 
+
+.current {
+  border: 1px solid red;
+  padding: 10px;
+  background: black;
+  color: white;
+  position: absolute;
+  box-sizing: border-box;
+  left: -100px;
+  bottom: 40px;
+  width: 190px;
+  z-index: 2;
+}
+
+.updates {
+  box-sizing: border-box;
+  border: 1px solid red;
+  padding: 10px;
+  overflow: scroll;
+  height: 150px;
+  width: 200px;
+  background: url(https://file.garden/ZdmNLegxzVCR-8F4/backgrounds/tumblr_1a1817a14106d62cf687c5abb1026745_579099bb_1280.webp) repeat scroll;;
+  color: white;
+  position: absolute;
+  left: -50px;
+  bottom: -120px;
+  z-index: 2;
+}
+
+.webring{
+  text-align: center;
+}
+
+.footer {
+  z-index: 1;
+}
+
+ ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 70px;
+  background-color: pink;
+  border: 1px solid red;
+  font-size: 10px;
+}
+
+li a {
+  display: block;
+  width: 60px;
+  color: red;
+  padding: 5px 5px;
+  text-decoration: none;
+  text-align: center;
+  border-bottom: 1px solid red;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+li a:hover {
+  background-color: red;
+  color: black;
+}
+
+.crt::after {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(18, 16, 16, 0.1);
+  opacity: 0;
+  z-index: 10;
+  pointer-events: none;
+  animation: flicker 0.15s infinite;
+}
+
+.crt::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+  z-index: 10;
+  background-size: 100% 2px, 3px 100%;
+  pointer-events: none;
+}
+
+.crt {
+  animation: textShadow 1.6s infinite;
+}

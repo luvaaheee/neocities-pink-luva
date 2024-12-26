@@ -1,0 +1,141 @@
+body {
+  background: url(https://file.garden/ZdmNLegxzVCR-8F4/backgrounds/tumblr_f81d86a7b72bdd4b58fb97aaa9f051ac_ae788eaf_540.png) repeat fixed;
+  font-family: monospace;
+  padding: 5px;
+  font-size: 10px;
+}
+
+.parent {  
+  display: grid; 
+  grid-template-columns: 0.7fr 1.3fr repeat(2, 1fr) 1.1fr 0.9fr; 
+  grid-template-rows: 0.5fr 1.5fr repeat(2, 1fr) 1.4fr 0.6fr; 
+  gap: 5px 5px; 
+  align-items: start; 
+  width: 600px; 
+  height: 500px; 
+  margin: auto;
+}
+
+.sidebar { grid-area: 2 / 1 / 4 / 2; }
+.content { grid-area: 2 / 2 / 6 / 6; }
+.pages { grid-area: 2 / 6 / 6 / 7; }
+.footer { grid-area: 6 / 1 / 7 / 7; }
+
+.content{
+  color: white;
+  background: black;
+  border: 1PX solid red;
+  padding: 20px;
+  height: 350px;
+  overflow: scroll;
+} 
+
+details img{
+  border-radius: 5px;
+  border: 1px solid white;
+  width: 130px;
+}
+
+details summary{
+  cursor: pointer;
+}
+
+details>summary:hover{
+  color: red;
+  text-shadow: rgba(255, 0, 0, 0.82) 1px 0 1px;
+}
+
+summary {
+  list-style-type: '> ';
+}
+
+details>p {
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 3px;
+  letter-spacing: 0.3px;
+  line-height: 14px;
+}
+
+.pages{
+  background: url(https://file.garden/ZdmNLegxzVCR-8F4/backgrounds/tumblr_1a1817a14106d62cf687c5abb1026745_579099bb_1280.webp) repeat fixed;
+  color: white;
+  width: 80px;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  border: 1px solid red;
+  box-sizing: border-box;
+}
+
+ ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 70px;
+  background-color: pink;
+  border: 1px solid red;
+  font-size: 10px;
+}
+
+li a {
+  display: block;
+  width: 60px;
+  color: red;
+  padding: 5px 5px;
+  text-decoration: none;
+  text-align: center;
+  border-bottom: 1px solid red;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+li a:hover {
+  background-color: red;
+  color: black;
+}
+
+a {
+  color: yellow;
+}
+
+a:hover {
+  color: black;
+  background: yellow;
+}
+
+.crt::after {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(18, 16, 16, 0.1);
+  opacity: 0;
+  z-index: 2;
+  pointer-events: none;
+  animation: flicker 0.15s infinite;
+}
+
+.crt::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+  z-index: 2;
+  background-size: 100% 2px, 3px 100%;
+  pointer-events: none;
+}
+
+.crt {
+  animation: textShadow 1.6s infinite;
+}

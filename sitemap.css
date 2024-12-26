@@ -1,0 +1,63 @@
+body {
+    background: black;
+    color: white;
+    padding: 20px;
+    font-family: monospace;
+    font-size: 12px;
+    letter-spacing: 0.3px;
+    line-height: 14px;
+}
+
+h1,h2 {
+    color:silver;
+}
+
+a {
+    color: white;
+}
+
+a:visited {
+    color: lightpink;
+}
+
+a:hover{
+    color:rgba(255, 0, 41, 0.9);
+    text-shadow: rgb(255, 3, 39) 2.5px 0 2px;
+}
+
+ul {
+    list-style-type: "> ";
+}
+
+.crt::after {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(18, 16, 16, 0.1);
+  opacity: 0;
+  z-index: 2;
+  pointer-events: none;
+  animation: flicker 0.15s infinite;
+}
+
+.crt::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+  z-index: 2;
+  background-size: 100% 2px, 3px 100%;
+  pointer-events: none;
+}
+
+.crt {
+  animation: textShadow 1.6s infinite;
+}

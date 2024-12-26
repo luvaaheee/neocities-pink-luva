@@ -1,0 +1,50 @@
+body {
+  background: url(https://file.garden/ZdmNLegxzVCR-8F4/backgrounds/tumblr_b6dde4747e42e8b5dca5ecaf9937ba84_547567ce_1280.webp) repeat fixed;
+  font-size: 12px;
+  font-family: "courier-new", monospace;
+  padding: 10px;
+  color: white;
+  letter-spacing: -0.5px;
+  line-height: 13px;
+  width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header {
+  font-size: 30px;
+  color: #A7DD3C;
+  background: black;
+  text-shadow: 2px 0 0px #800040, 3px 2px 0px rgba(77,0,38,0.5), 3px 0    3px #FF002B, 5px 0 3px #800015, 6px 2px 3px rgba(77,0,13,0.5), 6px 0    9px #FF5500, 8px 0 9px #802A00, 9px 2px 9px rgba(77,25,0,0.5), 9px 0    18px #FFD500, 11px 0 18px #806A00, 12px 2px 18px rgba(77,66,0,0.5),    12px 0 30px #D4FF00, 14px 0 30px #6A8000, 15px 2px 30px                rgba(64,77,0,0.5), 15px 0 45px #80FF00, 17px 0 45px #408000, 17px      2px 45px rgba(38,77,0,0.5);
+  color: #A7DD3C;
+  background: black;
+}
+
+h1 {
+  font-family: arial;
+  color: yellow;
+  letter-spacing: -0.5px;
+  line-height: 13px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 25px 10px;
+}
+
+section {
+  width: 420px;
+  height: 500px;
+  overflow: scroll;
+  padding: 10px;
+}
+
+a {
+  color: yellow;
+}
+
+a:hover{
+  background: yellow;
+  color:black;
+}

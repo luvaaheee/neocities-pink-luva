@@ -1,0 +1,93 @@
+body {
+  background: url(https://file.garden/ZdmNLegxzVCR-8F4/backgrounds/0064_small.gif) repeat fixed;
+  font-family: arial;
+  font-size: 13px;
+  color: white;
+  margin: auto;
+  padding: 20px;
+  width: 850px;
+}
+
+h1{
+  font-family: arial;
+  text-align: center;
+  color: #A7DD3C;
+  text-shadow: 2px 0 0px #800040, 3px 2px 0px rgba(77,0,38,0.5), 3px 0 3px #FF002B, 5px 0 3px #800015, 6px 2px 3px rgba(77,0,13,0.5), 6px 0 9px #FF5500, 8px 0 9px #802A00, 9px 2px 9px rgba(77,25,0,0.5), 9px 0 18px #FFD500, 11px 0 18px #806A00, 12px 2px 18px rgba(77,66,0,0.5), 12px 0 30px #D4FF00, 14px 0 30px #6A8000, 15px 2px 30px rgba(64,77,0,0.5), 15px 0 45px #80FF00, 17px 0 45px #408000, 17px 2px 45px rgba(38,77,0,0.5);
+  color: #A7DD3C;
+}
+
+.TITLE {
+  text-shadow: 1px 1px red;
+  font-family: Cambria, Cochin, Georgia, Times,;
+  text-align: center;
+  letter-spacing: 2.2px;
+  font-size: 14px;
+}
+
+img {
+  width: 80px;
+  margin: 10px;
+  border-radius: 2px;
+}
+
+.tableheader, th {
+  color: red;
+  font-family: arial;
+  padding: 10px;
+  letter-spacing: 3px;
+  text-shadow: #ea8500 1px 0 1px;
+  font-size: 20px;
+  border: 1px solid red;
+  background: black;
+}
+
+td {
+  box-sizing: border-box;
+  padding: 15px;
+  letter-spacing: 1px;
+  word-spacing: 4px;
+  border: 1px solid red;
+  background-color: black;
+}
+
+a{
+  color: yellow;
+}
+
+a:hover{
+  background: yellow;
+  color:black;
+}
+
+.crt::after {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(18, 16, 16, 0.1);
+  opacity: 0;
+  z-index: 2;
+  pointer-events: none;
+  animation: flicker 0.15s infinite;
+}
+
+.crt::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+  z-index: 2;
+  background-size: 100% 2px, 3px 100%;
+  pointer-events: none;
+}
+
+.crt {
+  animation: textShadow 1.6s infinite;
+}
