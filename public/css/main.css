@@ -39,8 +39,12 @@ body {
 
 .header { grid-area: 1 / 2 / 7 / 7; }
 .sidebar { grid-area: 2 / 1 / 4 / 2; }
-.footer { grid-area: 6 / 2 / 7 / 7; }
 .content { grid-area: 2 / 2 / 6 / 7; }
+.footer {
+  justify-self: center; 
+  align-self: end; 
+  grid-area: 6 / 2 / 7 / 7; 
+}
 /*  ^^^for gridlayout and format of ALL texts ^^^  */
 .blinkie { grid-area: 5 / 1 / 7 / 2; } /*in photoshome*/
 .pages { grid-area: 2 / 6 / 6 / 7; } /*in diary*/
