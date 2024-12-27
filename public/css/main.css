@@ -202,7 +202,7 @@ li a:hover {
 
 /*for links in parent*/
 a{
-  color: red
+  color: #ff4e4e;
 }
 
 a:hover {
