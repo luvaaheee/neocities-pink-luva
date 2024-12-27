@@ -35,7 +35,7 @@ a:visited {
 
 a:hover{
     color:rgba(255, 0, 41, 0.9);
-    text-shadow: rgb(255, 3, 39) 2.5px 0 2px;
+    text-shadow: rgb(255, 3, 39) 1px 0 1px;
 }
 
 /*misc and images*/
