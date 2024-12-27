@@ -79,7 +79,7 @@ body {
   line-height: 13px;
   height: 200px;
   width: 210px;
-  bottom: 30px;
+  bottom: -20px;
   left: 20px;
   color: white;
   background-color: black;
@@ -112,7 +112,7 @@ body {
   height: 150px;
   overflow: scroll;
   left: 110px;
-  bottom: -220px;
+  bottom: -200px;
   color: white;
   background-color: black;
   border: 1px solid red;
