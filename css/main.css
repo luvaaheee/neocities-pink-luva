@@ -2,10 +2,10 @@ body {
   background: url(https://file.garden/ZdmNLegxzVCR-8F4/backgrounds/tumblr_f81d86a7b72bdd4b58fb97aaa9f051ac_ae788eaf_540.png) repeat fixed;
   font-family: monospace;
   padding: 5px;
-  font-size: 12px;
+  font-size: 10px;
 }
 
-.parent {  
+.parent { /*main grid parent, holds navbar, content, etc*/
   display: grid; 
   grid-template-columns: 0.7fr 1.3fr 1fr 1fr 1fr 1fr; 
   grid-template-rows: 0.5fr 1.5fr repeat(2, 1fr) 1.4fr 0.6fr; 
@@ -17,13 +17,17 @@ body {
   position: relative;
 }
 
-.title { grid-area: 1 / 2 / 7 / 7; }
-.sidebar { grid-area: 2 / 1 / 4 / 2; }
-.footer { grid-area: 6 / 1 / 7 / 7; }
-.content { grid-area: 2 / 2 / 6 / 7; }
-.knight { grid-area: 1 / 3 / 4 / 2;}
+.content { /*where all images, texts, etc go into */
+  background: black;
+  border: 1PX solid red;
+  padding: 20px;
+  height: 350px;
+  overflow: scroll;
+  word-spacing: 5px;
+  color: white;
+} 
 
-.title {
+.header {
   font-size: 14px;
   color: red;
   font-family: arial;
@@ -33,20 +37,27 @@ body {
   align-items: end;
 }
 
-.content {
-  box-sizing: border-box;
-  color: white;
-  font-family: arial;
-  font-size: 14px;
-  background: black;
-  text-align: right;
-  border: 1px solid red;
-  padding: 20px;
-  height: 390px;
-  overflow: scroll;
-} 
+.header { grid-area: 1 / 2 / 7 / 7; }
+.sidebar { grid-area: 2 / 1 / 4 / 2; }
+.footer { grid-area: 6 / 1 / 7 / 7; }
+.content { grid-area: 2 / 2 / 6 / 7; }
+/*  ^^^for gridlayout and format of ALL texts ^^^  */
+.blinkie { grid-area: 5 / 1 / 7 / 2; } /*in photoshome*/
+.pages { grid-area: 2 / 6 / 6 / 7; } /*in diary*/
 
-.meettheartist {
+.pages{ /*in diary*/
+  background: url(https://file.garden/ZdmNLegxzVCR-8F4/backgrounds/tumblr_1a1817a14106d62cf687c5abb1026745_579099bb_1280.webp) repeat fixed;
+  color: white;
+  width: 80px;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  border: 1px solid red;
+  box-sizing: border-box;
+}
+
+.meettheartist { /*in about*/
   position: absolute;
   box-sizing: border-box;
   font-family: "Lucida Console", "Courier New", monospace;
@@ -64,7 +75,7 @@ body {
   overflow: scroll;
 }
 
-.extra {
+.extra { /*in about*/
   font-family: "Lucida Console", "Courier New", monospace;
   box-sizing: border-box;
   color: white;
@@ -82,7 +93,7 @@ body {
   right: 80px;
 }
 
-.glance {
+.glance { /*in about*/
   position: absolute;
   box-sizing: border-box;
   width: 180px;
@@ -95,16 +106,59 @@ body {
   border: 1px solid red;
 }
 
-th {
-  color: red;
+/*ALL tables' coloring and styles*/
+table {
+  border-collapse: collapse;
   font-family: arial;
-  font-size: 13px;
+  font-size: 11px;
+}
+
+th {
+  color: white;
+  padding: 2px;
+  border-bottom: 1.5px solid white;
+  border-top: 1.5px solid white;
 }
 
 td {
-  padding: 5px;
+  padding: 3px;
+  text-align: left;
+  border-bottom: 0.8px dashed white;
 }
 
+td+td {
+  text-align: right;
+}
+
+/*details & summary expands*/
+details summary{
+  cursor: pointer;
+}
+
+details img{
+  border-radius: 5px;
+  border: 1px solid white;
+  width: 130px;
+}
+
+details>p {
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 3px;
+  letter-spacing: 0.3px;
+  line-height: 14px;
+}
+e
+details>summary:hover{
+  color: red;
+  text-shadow: rgba(255, 0, 0, 0.82) 1px 0 1px;
+}
+
+summary {
+  list-style-type: '> ';
+}
+
+/*navbar coloring*/
  ul {
   list-style-type: none;
   margin: 0;
@@ -125,7 +179,7 @@ li a {
   border-bottom: 1px solid red;
 }
 
- li:last-child {
+li:last-child {
   border-bottom: none;
 }
 
@@ -134,15 +188,17 @@ li a:hover {
   color: black;
 }
 
+/*for links in parent*/
 a{
-  color: yellow
+  color: red
 }
 
 a:hover {
-  color: black;
-  background: yellow;
+  color: red;
+  text-shadow: rgba(255,0,0,0.82) 1px 0 1px;
 }
 
+/*crt screen overlay*/
 .crt::after {
   content: " ";
   display: block;

@@ -1,77 +1,50 @@
 body {
   background: url(https://file.garden/ZdmNLegxzVCR-8F4/backgrounds/tumblr_f81d86a7b72bdd4b58fb97aaa9f051ac_ae788eaf_540.png) repeat fixed;
-   font-family: monospace;
-   padding: 5px;
-   font-size: 10px;
+  font-family: monospace;
+  padding: 5px;
+  font-size: 13px;
 }
 
-.parent {  
-  display: grid; 
-  grid-template-columns: 0.7fr 1.3fr 1fr 1fr 1fr 1fr; 
-  grid-template-rows: 0.5fr 1.5fr repeat(2, 1fr) 1.4fr 0.6fr; 
-  gap: 5px 5px; 
-  align-items: start; 
-  width: 600px; 
-  height: 500px; 
+.parent { 
+  width: 1030px; 
   margin: auto;
+  height: auto;
 }
-
-.sidebar { grid-area: 2 / 1 / 4 / 2; }
-.footer { grid-area: 6 / 1 / 7 / 7; }
-.content { grid-area: 2 / 2 / 6 / 7; }
 
 .content{
-  background: white;
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
   border: 1PX solid red;
-  padding: 20px;
-  height: 350px;
-  overflow: scroll;
+  padding: 30px;
+  text-align: center;
 } 
 
 img {
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  padding: 5px;
-  height: 80px;
+  padding: 6px;
+  height: 200px;
 }
 
 img:hover {
-  box-shadow: 0 0 2px 1px pink;
+  box-shadow: 0 0 2px 2px rgba(253, 0, 44, 0.99);
+    
 }
 
- ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  width: 70px;
-  background-color: pink;
-  border: 1px solid red;
-  font-size: 10px;
+/*for links in parent*/
+a{
+  color: red
 }
 
-li a {
-  display: block;
-  width: 60px;
+a:hover {
   color: red;
-  padding: 5px 5px;
-  text-decoration: none;
-  text-align: center;
-  border-bottom: 1px solid red;
+  text-shadow: rgba(255,0,0,0.82) 2px 0 2px;
 }
 
- li:last-child {
-  border-bottom: none;
-}
-
-li a:hover {
-  background-color: red;
-  color: black;
-}
-
+/*crt overlay*/
 .crt::after {
   content: " ";
   display: block;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   bottom: 0;
@@ -86,7 +59,7 @@ li a:hover {
 .crt::before {
   content: " ";
   display: block;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   bottom: 0;
