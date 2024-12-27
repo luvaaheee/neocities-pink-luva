@@ -49,6 +49,7 @@ body {
 .blinkie { grid-area: 5 / 1 / 7 / 2; } /*in photoshome*/
 
 .diary { grid-area: 2 / 2 / 6 / 6; 
+  background-color: black;
   color: white;
   border: 1px solid red;
   overflow: scroll;
