@@ -1,2 +1,1 @@
-# pink-luva
-# neocities-pink-luva
+my neocities site
