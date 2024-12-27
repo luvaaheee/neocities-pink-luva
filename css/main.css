@@ -1,0 +1,233 @@
+body {
+  background: url(https://file.garden/ZdmNLegxzVCR-8F4/backgrounds/tumblr_f81d86a7b72bdd4b58fb97aaa9f051ac_ae788eaf_540.png) repeat fixed;
+  font-family: monospace;
+  padding: 5px;
+  font-size: 10px;
+}
+
+.parent { /*main grid parent, holds navbar, content, etc*/
+  display: grid; 
+  grid-template-columns: 0.7fr 1.3fr 1fr 1fr 1fr 1fr; 
+  grid-template-rows: 0.5fr 1.5fr repeat(2, 1fr) 1.4fr 0.6fr; 
+  gap: 5px 5px; 
+  align-items: start; 
+  width: 600px; 
+  height: 500px; 
+  margin: auto;
+  position: relative;
+}
+
+.content { /*where all images, texts, etc go into */
+  background: black;
+  border: 1PX solid red;
+  padding: 20px;
+  height: 350px;
+  overflow: scroll;
+  word-spacing: 5px;
+  color: white;
+} 
+
+.header {
+  font-size: 14px;
+  color: red;
+  font-family: arial;
+  text-shadow: blue 1px 1px;
+  text-align: center;
+  letter-spacing: 8px;
+  align-items: end;
+}
+
+.header { grid-area: 1 / 2 / 7 / 7; }
+.sidebar { grid-area: 2 / 1 / 4 / 2; }
+.footer { grid-area: 6 / 1 / 7 / 7; }
+.content { grid-area: 2 / 2 / 6 / 7; }
+/*  ^^^for gridlayout and format of ALL texts ^^^  */
+.blinkie { grid-area: 5 / 1 / 7 / 2; } /*in photoshome*/
+.pages { grid-area: 2 / 6 / 6 / 7; } /*in diary*/
+
+.pages{ /*in diary*/
+  background: url(https://file.garden/ZdmNLegxzVCR-8F4/backgrounds/tumblr_1a1817a14106d62cf687c5abb1026745_579099bb_1280.webp) repeat fixed;
+  color: white;
+  width: 80px;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  border: 1px solid red;
+  box-sizing: border-box;
+}
+
+.meettheartist { /*in about*/
+  position: absolute;
+  box-sizing: border-box;
+  font-family: "Lucida Console", "Courier New", monospace;
+  padding: 10px;
+  font-size: 9px;
+  letter-spacing: -0.5px;
+  line-height: 13px;
+  height: 200px;
+  width: 210px;
+  bottom: 30px;
+  left: 20px;
+  color: white;
+  background-color: black;
+  border: 1px solid red;
+  overflow: scroll;
+}
+
+.extra { /*in about*/
+  font-family: "Lucida Console", "Courier New", monospace;
+  box-sizing: border-box;
+  color: white;
+  background-color: black;
+  position:absolute;
+  border: 1px solid red;
+  letter-spacing: -0.5px;
+  line-height: 13px;
+  width: 240px;
+  height: 200px;
+  overflow: scroll;
+  padding: 10px;
+  font-size: 9px;
+  bottom: -30px;
+  right: 80px;
+}
+
+.glance { /*in about*/
+  position: absolute;
+  box-sizing: border-box;
+  width: 180px;
+  height: 150px;
+  overflow: scroll;
+  left: 110px;
+  bottom: -220px;
+  color: white;
+  background-color: black;
+  border: 1px solid red;
+}
+
+/*ALL tables' coloring and styles*/
+table {
+  border-collapse: collapse;
+  font-family: arial;
+  font-size: 11px;
+}
+
+th {
+  color: white;
+  padding: 2px;
+  border-bottom: 1.5px solid white;
+  border-top: 1.5px solid white;
+}
+
+td {
+  padding: 3px;
+  text-align: left;
+  border-bottom: 0.8px dashed white;
+}
+
+td+td {
+  text-align: right;
+}
+
+/*details & summary expands*/
+details summary{
+  cursor: pointer;
+}
+
+details img{
+  border-radius: 5px;
+  border: 1px solid white;
+  width: 130px;
+}
+
+details>p {
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 3px;
+  letter-spacing: 0.3px;
+  line-height: 14px;
+}
+e
+details>summary:hover{
+  color: red;
+  text-shadow: rgba(255, 0, 0, 0.82) 1px 0 1px;
+}
+
+summary {
+  list-style-type: '> ';
+}
+
+/*navbar coloring*/
+ ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 70px;
+  background-color: pink;
+  border: 1px solid red;
+  font-size: 10px;
+}
+
+li a {
+  display: block;
+  width: 60px;
+  color: red;
+  padding: 5px 5px;
+  text-decoration: none;
+  text-align: center;
+  border-bottom: 1px solid red;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+li a:hover {
+  background-color: red;
+  color: black;
+}
+
+/*for links in parent*/
+a{
+  color: red
+}
+
+a:hover {
+  color: red;
+  text-shadow: rgba(255,0,0,0.82) 1px 0 1px;
+}
+
+/*crt screen overlay*/
+.crt::after {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(18, 16, 16, 0.1);
+  opacity: 0;
+  z-index: 2;
+  pointer-events: none;
+  animation: flicker 0.15s infinite;
+}
+
+.crt::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+  z-index: 2;
+  background-size: 100% 2px, 3px 100%;
+  pointer-events: none;
+}
+
+.crt {
+  animation: textShadow 1.6s infinite;
+}
