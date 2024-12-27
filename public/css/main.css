@@ -47,9 +47,7 @@ body {
 }
 /*  ^^^for gridlayout and format of ALL texts ^^^  */
 .blinkie { grid-area: 5 / 1 / 7 / 2; } /*in photoshome*/
-.pages { grid-area: 2 / 6 / 6 / 7; } /*in diary*/
-
-.pages{ /*in diary*/
+.pages { grid-area: 2 / 6 / 6 / 7; 
   background: url(https://file.garden/ZdmNLegxzVCR-8F4/backgrounds/tumblr_1a1817a14106d62cf687c5abb1026745_579099bb_1280.webp) repeat fixed;
   color: white;
   width: 80px;
@@ -58,8 +56,8 @@ body {
   margin-right: auto;
   text-align: center;
   border: 1px solid red;
-  box-sizing: border-box;
-}
+  box-sizing: border-box;     
+} /*in diary*/
 
 .meettheartist { /*in about*/
   position: absolute;
