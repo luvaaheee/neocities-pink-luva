@@ -20,9 +20,11 @@ body {
 .sidebar { grid-area: 2 / 1 / 4 / 2; }
 .footer { grid-area: 6 / 2 / 7 / 7; }
 .content { grid-area: 2 / 2 / 6 / 5; }
-.chatbox { grid-area: 2 / 5 / 6 / 7; }
+.chatbox { grid-area: 2 / 5 / 6 / 7; } /*only on index.html (chatbox) */
 .webring { grid-area: 4 / 1 / 6 / 2; }
+/*   ^^^^  grid layout  ^^^^   */
 
+/*link coloring*/
 a {
     color: white;
 }
@@ -36,6 +38,7 @@ a:hover{
     text-shadow: rgb(255, 3, 39) 2.5px 0 2px;
 }
 
+/*misc and images*/
 .counter {
   border: 1px solid red;
   background-color: black;
@@ -92,7 +95,9 @@ a:hover{
   right: 20px;
   z-index:4;
 }
+/*end misc and images*/
 
+/*main - where text goes*/
 .content{
   background: black;
   color: white;
@@ -103,6 +108,7 @@ a:hover{
   z-index: 1;
 } 
 
+/*floating divs- site updates and currently doing*/
 .current {
   border: 1px solid red;
   padding: 10px;
@@ -135,10 +141,12 @@ a:hover{
   text-align: center;
 }
 
+/*marquee*/
 .footer {
   z-index: 1;
 }
 
+/*navbar coloring*/
  ul {
   list-style-type: none;
   margin: 0;
@@ -168,10 +176,37 @@ li a:hover {
   color: black;
 }
 
+/*statuscafe widget*/
+#statuscafe {
+    width: 150px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: 1px solid red;
+    font-family: monospace;
+    position: absolute;
+    bottom: -75px;
+    left: 165px;
+    z-index: 2;
+}
+#statuscafe-username {
+    margin-bottom: .5em;
+    color: pink;
+}
+  
+#statuscafe-username:hover {
+  color: pink;
+}
+  
+#statuscafe-content {
+    margin: 0 1em 0.5em 1em;
+}
+
+/*crt overlay*/
 .crt::after {
   content: " ";
   display: block;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   bottom: 0;
@@ -186,7 +221,7 @@ li a:hover {
 .crt::before {
   content: " ";
   display: block;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   bottom: 0;
