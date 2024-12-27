@@ -72,9 +72,9 @@ body {
 .meettheartist { /*in about*/
   position: absolute;
   box-sizing: border-box;
-  font-family: "Lucida Console", "Courier New", monospace;
+  font-family: monospace;
   padding: 10px;
-  font-size: 9px;
+  font-size: 10px;
   letter-spacing: -0.5px;
   line-height: 13px;
   height: 200px;
@@ -88,7 +88,7 @@ body {
 }
 
 .extra { /*in about*/
-  font-family: "Lucida Console", "Courier New", monospace;
+  font-family: monospace;
   box-sizing: border-box;
   color: white;
   background-color: black;
@@ -100,7 +100,7 @@ body {
   height: 200px;
   overflow: scroll;
   padding: 10px;
-  font-size: 9px;
+  font-size: 10px;
   bottom: -30px;
   right: 80px;
 }
