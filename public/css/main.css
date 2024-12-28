@@ -79,6 +79,7 @@ li a:hover {
   color: black;
 }
 .content { grid-area: 2 / 2 / 6 / 7; }
+.interesting { grid-area: 2 / 2 / 6 / 7; } /*interesting/links tab gridding */
 .footer {
   justify-self: center; 
   align-self: end; 
@@ -87,7 +88,7 @@ li a:hover {
 /*  ^^^for gridlayout and format of ALL texts ^^^  */
 .blinkie { grid-area: 5 / 1 / 7 / 2; } /*in photoshome*/
 
-.diary { grid-area: 2 / 2 / 6 / 6; 
+.diary { grid-area: 2 / 2 / 6 / 6; /*diary.html*/
   background-color: black;
   color: white;
   border: 1px solid red;
@@ -95,8 +96,8 @@ li a:hover {
   word-spacing: 5px;
   height: 350px;
   padding: 20px;
-} /*diary.html*/
-.pages { grid-area: 2 / 6 / 6 / 7; 
+} 
+.pages { grid-area: 2 / 6 / 6 / 7; /*in diary*/
   background: url(https://file.garden/ZdmNLegxzVCR-8F4/backgrounds/tumblr_1a1817a14106d62cf687c5abb1026745_579099bb_1280.webp) repeat fixed;
   color: white;
   width: 80px;
@@ -106,7 +107,7 @@ li a:hover {
   text-align: center;
   border: 1px solid red;
   box-sizing: border-box;     
-} /*in diary*/
+} 
 
 .meettheartist { /*in about*/
   position: absolute;
@@ -181,7 +182,7 @@ td+td {
   text-align: right;
 }
 
-/*details & summary expands*/
+/*ALL details & summary expands*/
 details summary{
   cursor: pointer;
 }
@@ -209,7 +210,7 @@ summary {
   list-style-type: '> ';
 }
 
-/*for links in parent*/
+/*for ALL links in parent*/
 a{
   color: red;
 }
@@ -223,7 +224,7 @@ a:hover {
 .crt::after {
   content: " ";
   display: block;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   bottom: 0;
@@ -238,7 +239,7 @@ a:hover {
 .crt::before {
   content: " ";
   display: block;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   bottom: 0;
