@@ -2,7 +2,7 @@ body {
   background: url(https://file.garden/ZdmNLegxzVCR-8F4/backgrounds/tumblr_f81d86a7b72bdd4b58fb97aaa9f051ac_ae788eaf_540.png) repeat fixed;
   font-family: monospace;
   padding: 5px;
-  font-size: 10px;
+  font-size: 11px;
 }
 
 .parent { /*main grid parent, holds navbar, content, etc*/
@@ -26,6 +26,16 @@ body {
   word-spacing: 5px;
   color: white;
 } 
+
+.interesting{ /*for interesting tab coloring*/
+  background: white;
+  border: 1px solid red;
+  padding: 20px;
+  height: 350px;
+  overflow: scroll;
+  word-spacing: 5px;
+  color: black;
+}
 
 .header {
   font-size: 14px;
@@ -201,7 +211,7 @@ summary {
 
 /*for links in parent*/
 a{
-  color: pink;
+  color: red;
 }
 
 a:hover {
