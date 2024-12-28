@@ -27,16 +27,6 @@ body {
   color: white;
 } 
 
-.interesting{ /*for interesting tab coloring*/
-  background: white;
-  border: 1px solid red;
-  padding: 20px;
-  height: 350px;
-  overflow: scroll;
-  word-spacing: 5px;
-  color: black;
-}
-
 .header {
   font-size: 14px;
   color: red;
