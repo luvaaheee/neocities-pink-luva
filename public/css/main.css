@@ -79,7 +79,6 @@ li a:hover {
   color: black;
 }
 .content { grid-area: 2 / 2 / 6 / 7; }
-.interesting { grid-area: 2 / 2 / 6 / 7; } /*interesting/links tab gridding */
 .footer {
   justify-self: center; 
   align-self: end; 
@@ -181,27 +180,6 @@ td {
 td+td {
   text-align: right;
 }
-
-/*INTERESTING START*/
-.interesting>table {
-  border-collapse: collapse;
-  font-family: arial;
-  font-size: 11px;
-}
-
-.interesting>th {
-  color: black;
-  padding: 2px;
-  border-bottom: 1.2px solid black;
-  border-top: 1.2px solid black;
-}
-
-interesting>td {
-  padding: 3px;
-  text-align: left;
-  border-bottom: 0.8px dashed black;
-}
-/*INTERESTING END*/
 
 /*ALL details & summary expands*/
 details summary{
