@@ -155,16 +155,16 @@ table {
 }
 
 th {
-  color: white;
+  color: black;
   padding: 2px;
-  border-bottom: 1.2px solid white;
-  border-top: 1.2px solid white;
+  border-bottom: 1.2px solid black;
+  border-top: 1.2px solid black;
 }
 
 td {
   padding: 3px;
   text-align: left;
-  border-bottom: 0.8px dashed white;
+  border-bottom: 0.8px dashed black;
 }
 
 td+td {
@@ -178,13 +178,13 @@ details summary{
 
 details img{
   border-radius: 5px;
-  border: 1px solid white;
+  border: 1px solid black;
   width: 130px;
 }
 
 details>p {
   padding: 10px;
-  border: 1px solid white;
+  border: 1px solid black;
   border-radius: 3px;
   letter-spacing: 0.3px;
   line-height: 14px;
