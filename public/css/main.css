@@ -18,13 +18,13 @@ body {
 }
 
 .content { /*where all images, texts, etc go into */
-  background: black;
+  background: white;
   border: 1PX solid red;
   padding: 20px;
   height: 350px;
   overflow: scroll;
   word-spacing: 5px;
-  color: white;
+  color: black;
 } 
 
 .header {
