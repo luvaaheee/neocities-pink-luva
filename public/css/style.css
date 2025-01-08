@@ -148,22 +148,22 @@ a:hover{
 
 /*navbar coloring*/
  ul {
+  box-sizing: border-box;
   list-style-type: none;
   margin: 0;
   padding: 0;
   width: 70px;
-  background-color: pink;
-  border: 1px solid red;
-  font-size: 10px;
+  font-size: 12px;
 }
 
 li a {
+  font-style: italic;
   display: block;
   width: 60px;
   color: red;
   padding: 5px 5px;
   text-decoration: none;
-  text-align: center;
+  text-align: right;
   border-bottom: 1px solid red;
 }
 
@@ -172,8 +172,7 @@ li:last-child {
 }
 
 li a:hover {
-  background-color: red;
-  color: black;
+  color: red;
 }
 
 /*statuscafe widget*/
