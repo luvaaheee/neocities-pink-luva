@@ -148,8 +148,7 @@ details img {
 }
 
 details > p {
-  background: rgba(253, 154, 192, 0.83);
-  color: black;
+  color: white;
   padding: 10px;
   border: 1px solid red;
   border-bottom-left-radius: 10px;
