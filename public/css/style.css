@@ -24,18 +24,122 @@ body {
 .webring { grid-area: 4 / 1 / 6 / 2; }
 /*   ^^^^  grid layout  ^^^^   */
 
+/*main - where text goes*/
+.content{
+  background: black;
+  color: white;
+  border: 1PX solid red;
+  padding: 20px;
+  height: 350px;
+  overflow: scroll;
+  z-index: 1;
+} 
+
+/*navbar/sidebar coloring*/
+ ul {
+  box-sizing: border-box;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 70px;
+  font-size: 12px;
+}
+
+li a {
+  font-style: italic;
+  display: block;
+  width: 60px;
+  color: red;
+  padding: 5px 5px;
+  text-decoration: none;
+  text-align: right;
+  border-bottom: 1px solid red;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+li a:hover {
+  color: red;
+}
+
 /*link coloring*/
 a {
-    color: white;
+  color: white;
 }
 
 a:visited {
-    color: red;
+  color: red;
 }
 
 a:hover{
-    color:rgba(255, 0, 41, 0.9);
-    text-shadow: rgb(255, 3, 39) 1px 0 1px;
+  color:rgba(255, 0, 41, 0.9);
+  text-shadow: rgb(255, 3, 39) 1px 0 1px;
+}
+
+/*floating divs- site updates and currently doing*/
+.current {
+  border: 1px solid red;
+  padding: 10px;
+  background: black;
+  color: white;
+  position: absolute;
+  box-sizing: border-box;
+  left: -100px;
+  bottom: 40px;
+  width: 190px;
+  z-index: 2;
+}
+
+.updates {
+  box-sizing: border-box;
+  border: 1px solid red;
+  padding: 10px;
+  overflow: scroll;
+  height: 150px;
+  width: 200px;
+  background: url(https://file.garden/ZdmNLegxzVCR-8F4/backgrounds/tumblr_1a1817a14106d62cf687c5abb1026745_579099bb_1280.webp) repeat scroll;;
+  color: white;
+  position: absolute;
+  left: -50px;
+  bottom: -120px;
+  z-index: 2;
+}
+
+/*statuscafe widget*/
+#statuscafe {
+  width: 150px;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  border: 1px solid red;
+  font-family: monospace;
+  position: absolute;
+  bottom: -75px;
+  left: 165px;
+  z-index: 2;
+}
+#statuscafe-username {
+  margin-bottom: .5em;
+  color: pink;
+}
+  
+#statuscafe-username:hover {
+  color: pink;
+}
+  
+#statuscafe-content {
+  margin: 0 1em 0.5em 1em;
+}
+
+.webring{
+  text-align: center;
+}
+
+/*marquee*/
+.footer {
+  z-index: 1;
 }
 
 /*misc and images*/
@@ -96,107 +200,3 @@ a:hover{
   z-index:4;
 }
 /*end misc and images*/
-
-/*main - where text goes*/
-.content{
-  background: black;
-  color: white;
-  border: 1PX solid red;
-  padding: 20px;
-  height: 350px;
-  overflow: scroll;
-  z-index: 1;
-} 
-
-/*floating divs- site updates and currently doing*/
-.current {
-  border: 1px solid red;
-  padding: 10px;
-  background: black;
-  color: white;
-  position: absolute;
-  box-sizing: border-box;
-  left: -100px;
-  bottom: 40px;
-  width: 190px;
-  z-index: 2;
-}
-
-.updates {
-  box-sizing: border-box;
-  border: 1px solid red;
-  padding: 10px;
-  overflow: scroll;
-  height: 150px;
-  width: 200px;
-  background: url(https://file.garden/ZdmNLegxzVCR-8F4/backgrounds/tumblr_1a1817a14106d62cf687c5abb1026745_579099bb_1280.webp) repeat scroll;;
-  color: white;
-  position: absolute;
-  left: -50px;
-  bottom: -120px;
-  z-index: 2;
-}
-
-.webring{
-  text-align: center;
-}
-
-/*marquee*/
-.footer {
-  z-index: 1;
-}
-
-/*navbar coloring*/
- ul {
-  box-sizing: border-box;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  width: 70px;
-  font-size: 12px;
-}
-
-li a {
-  font-style: italic;
-  display: block;
-  width: 60px;
-  color: red;
-  padding: 5px 5px;
-  text-decoration: none;
-  text-align: right;
-  border-bottom: 1px solid red;
-}
-
-li:last-child {
-  border-bottom: none;
-}
-
-li a:hover {
-  color: red;
-}
-
-/*statuscafe widget*/
-#statuscafe {
-    width: 150px;
-    padding: 10px;
-    background-color: black;
-    color: white;
-    border: 1px solid red;
-    font-family: monospace;
-    position: absolute;
-    bottom: -75px;
-    left: 165px;
-    z-index: 2;
-}
-#statuscafe-username {
-    margin-bottom: .5em;
-    color: pink;
-}
-  
-#statuscafe-username:hover {
-  color: pink;
-}
-  
-#statuscafe-content {
-    margin: 0 1em 0.5em 1em;
-}
