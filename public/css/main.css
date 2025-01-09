@@ -90,10 +90,6 @@ li a:hover {
 }
 /*  ^^^for gridlayout and format of ALL texts ^^^  */
 
-.blinkie {
-  grid-area: 6 / 1 / 7 / 2;
-} /*in photoshome*/
-
 .pages { /*in diary*/
   background: url(https://file.garden/ZdmNLegxzVCR-8F4/backgrounds/tumblr_1a1817a14106d62cf687c5abb1026745_579099bb_1280.webp)
     repeat fixed;
@@ -105,6 +101,8 @@ li a:hover {
   text-align: center;
   border: 1px solid red;
   box-sizing: border-box;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
 }
 
 /*ALL tables' coloring and styles*/
@@ -116,14 +114,14 @@ table {
 
 th {
   color: red;
-  padding: 5px;
+  padding: 6px;
   font-style: italic;
   border-bottom: 1.5px solid red;
   border-top: 1.5px solid red;
 }
 
 td {
-  padding: 8px;
+  padding: 4px;
   text-align: left;
   border-bottom: 0.8px dashed white;
 }
@@ -134,6 +132,11 @@ td>a {
 
 td + td {
   text-align: right;
+}
+
+.glance { /*table in about me section*/
+  text-align: right;
+  border: 1px solid red;
 }
 
 /*ALL details & summary expands*/
@@ -151,8 +154,8 @@ details > p {
   color: white;
   padding: 10px;
   border: 1px solid red;
-  border-bottom-left-radius: 10px;
-  border-top-right-radius: 10px;
+  border-bottom-left-radius: 15px;
+  border-top-right-radius: 15px;
   letter-spacing: 0.3px;
   line-height: 14px;
 }
