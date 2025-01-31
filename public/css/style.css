@@ -1,193 +1,201 @@
 body {
-  background: url(https://file.garden/ZdmNLegxzVCR-8F4/backgrounds/tumblr_f81d86a7b72bdd4b58fb97aaa9f051ac_ae788eaf_540.png)
-    repeat fixed;
+  background: url(https://file.garden/ZdmNLegxzVCR-8F4/backgrounds/tumblr_f81d86a7b72bdd4b58fb97aaa9f051ac_ae788eaf_540.png) repeat fixed;
   font-family: monospace;
   padding: 5px;
-  font-size: 12.5px;
+  font-size: 11px;
 }
 
-.parent {
-  /*main grid parent, holds navbar, content, etc*/
-  display: grid;
-  grid-template-columns: 0.3fr 2fr 0.3fr; 
-  grid-template-rows: 0.2fr 1.8fr; 
-  align-content: start;
-  gap: 5px 5px;
-  height: 700px;
-  width: 700px; 
-  margin-left: auto;
-  margin-right: auto;
+.parent {  
   position: relative;
+  display: grid; 
+  grid-template-columns: 0.7fr 1.3fr repeat(4, 1fr); 
+  grid-template-rows: 0.5fr repeat(2, 1fr) 1.5fr 1.4fr 0.6fr; 
+  gap: 5px 5px; 
+  align-items: start; 
+  width: 600px; 
+  height: 500px; 
+  margin: auto;
 }
 
-.content {
-  /*where all images, texts, etc go into */
-  grid-area: 2 / 2 / 3 / 3;
-  box-sizing: border-box;
-  border: 1px solid red;
-  border-bottom-left-radius: 30px;
-  border-top-right-radius: 30px;
-  padding: 20px;
-  height: 700px;
-  width: 600px;
-  overflow: scroll;
-  word-spacing: 4px;
-  color: white;
+.sidebar { grid-area: 2 / 1 / 4 / 2; }
+.footer { grid-area: 6 / 2 / 7 / 7; }
+.content { grid-area: 2 / 2 / 6 / 5; }
+.chatbox { grid-area: 2 / 5 / 6 / 7; } /*only on index.html (chatbox) */
+.webring { grid-area: 4 / 1 / 6 / 2; }
+/*   ^^^^  grid layout  ^^^^   */
+
+/*main - where text goes*/
+.content{
   background: black;
-}
+  color: white;
+  border: 1PX solid red;
+  padding: 20px;
+  height: 350px;
+  overflow: scroll;
+  z-index: 1;
+} 
 
-.misc { grid-area: 2 / 3 / 3 / 4; }
-
-.header {
-  grid-area: 1 / 2 / 2 / 3;
-  box-sizing: border-box;
-  font-size: 14px;
-  color: red;
-  font-family: arial;
-  font-style: italic;
-  text-align: left;
-  letter-spacing: 8px;
-  align-items: end;
-}
-
-#navbar {
-  grid-area: 2 / 1 / 3 / 2;
-}
-
-/*navbar coloring*/
-ul {
+/*navbar/sidebar coloring*/
+ ul {
   box-sizing: border-box;
   list-style-type: none;
   margin: 0;
   padding: 0;
-  width: 80px;
+  width: 70px;
   font-size: 12px;
+}
+
+li a {
+  font-style: italic;
+  display: block;
+  width: 60px;
+  color: red;
+  padding: 5px 5px;
+  text-decoration: none;
+  border-bottom: 1px solid red;
 }
 
 li:last-child {
   border-bottom: none;
 }
 
-li a {
-  font-style: italic;
-  display: block;
-  width: 70px;
-  color: red;
-  padding: 5px 5px;
-  text-decoration: none;
-  text-align: right;
-  border-bottom: 1px solid red;
-}
-
 li a:hover {
   color: red;
 }
 
-.footer {
-  justify-self: center;
-  align-self: end;
-  grid-area: 6 / 2 / 7 / 6;
-}
-/*  ^^^for gridlayout and format of ALL texts ^^^  */
-
-.pages { /*in diary*/
-  background: url(https://file.garden/ZdmNLegxzVCR-8F4/backgrounds/tumblr_1a1817a14106d62cf687c5abb1026745_579099bb_1280.webp)
-    repeat fixed;
-  color: white;
-  width: 80px;
-  padding: 10px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  border: 1px solid red;
-  box-sizing: border-box;
-  border-top-right-radius: 15px;
-  border-bottom-left-radius: 15px;
-}
-
-/**pages that have buttons**/
-.buttons{
-  display: flex;
-  justify-content: center;
-}
-
-.page{
-  color: pink;
-  background: red;
-  font-size:20px;
-  margin: 5px;
-}
-
-/*ALL tables' coloring and styles*/
-table {
-  border-collapse: collapse;
-  font-family: arial;
-  font-size: 12px;
-}
-
-th {
-  color: red;
-  padding: 6px;
-  font-style: italic;
-  border-bottom: 1.5px solid red;
-  border-top: 1.5px solid red;
-}
-
-td {
-  padding: 4px;
-  text-align: left;
-  border-bottom: 0.8px dashed white;
-}
-td>a {
-  color: red;
-  font-style: italic;
-}
-
-td + td {
-  text-align: right;
-}
-
-.glance { /*table in about me section*/
-  text-align: right;
-  border: 1px solid red;
-}
-
-/*ALL details & summary expands*/
-details summary {
-  cursor: pointer;
-}
-
-details img {
-  border-radius: 5px;
-  border: 1px solid red;
-  width: 130px;
-}
-
-details > p {
-  color: white;
-  padding: 10px;
-  border: 1px solid red;
-  border-bottom-left-radius: 15px;
-  border-top-right-radius: 15px;
-  letter-spacing: 0.3px;
-  line-height: 14px;
-}
-
-details > summary:hover {
-  color: red;
-  text-shadow: rgba(255, 0, 0, 0.82) 1px 0 1px;
-}
-
-summary {
-  list-style-type: "> ";
-}
-
-/*for ALL links in parent*/
+/*link coloring*/
 a {
+  color: white;
+}
+
+a:visited {
   color: red;
 }
 
-a:hover {
-  color: hotpink;
-  text-shadow: rgba(255, 0, 0, 0.82) 1px 0 1px;
+a:hover{
+  color:rgba(255, 0, 41, 0.9);
+  text-shadow: rgb(255, 3, 39) 1px 0 1px;
 }
+
+/*floating divs- site updates and currently doing*/
+.current {
+  border: 1px solid red;
+  padding: 10px;
+  background: black;
+  color: white;
+  position: absolute;
+  box-sizing: border-box;
+  left: -100px;
+  bottom: 40px;
+  width: 190px;
+  z-index: 2;
+}
+
+.updates {
+  box-sizing: border-box;
+  border: 1px solid red;
+  padding: 10px;
+  overflow: scroll;
+  height: 150px;
+  width: 200px;
+  background: url(https://file.garden/ZdmNLegxzVCR-8F4/backgrounds/tumblr_1a1817a14106d62cf687c5abb1026745_579099bb_1280.webp) repeat scroll;;
+  color: white;
+  position: absolute;
+  left: -50px;
+  bottom: -120px;
+  z-index: 2;
+}
+
+/*statuscafe widget*/
+#statuscafe {
+  width: 150px;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  border: 1px solid red;
+  font-family: monospace;
+  position: absolute;
+  bottom: -75px;
+  left: 165px;
+  z-index: 2;
+}
+#statuscafe-username {
+  margin-bottom: .5em;
+  color: pink;
+}
+  
+#statuscafe-username:hover {
+  color: pink;
+}
+  
+#statuscafe-content {
+  margin: 0 1em 0.5em 1em;
+}
+
+.webring{
+  text-align: center;
+}
+
+/*marquee*/
+.footer {
+  z-index: 1;
+}
+
+/*misc and images*/
+.counter {
+  border: 1px solid red;
+  background-color: black;
+  padding: 5px;
+  position: absolute;
+  right: -90px;
+  top: 200px;
+  z-index: 3;
+}
+
+.money {
+  position: absolute;
+  width: 140px;
+  right: -30px;
+  bottom: -100px;
+  z-index: 3;
+}
+
+.smiley {
+  position: absolute;
+  width: 250px;
+  right: -150px;
+  bottom: -90px;
+  z-index: 2;
+}
+
+.phonekill {
+  width: 90px;
+  position: absolute;
+  right: -70px;
+  top: 20px;
+  z-index: 2;
+}
+
+.kibby {
+  width: 100px;
+  position:absolute;
+  left: 50px;
+  bottom: -3px;
+  z-index: 3;
+}
+
+.heart {
+  width: 50px;
+  position:absolute;
+  right: -80px;
+  top: 70px;
+}
+
+.gang {
+  position: absolute;
+  width: 130px;
+  top: -5px;
+  right: 20px;
+  z-index:4;
+}
+/*end misc and images*/

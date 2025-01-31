@@ -105,6 +105,19 @@ li a:hover {
   border-bottom-left-radius: 15px;
 }
 
+/**pages that have buttons**/
+.buttons{
+  display: flex;
+  justify-content: center;
+}
+
+.page{
+  color: pink;
+  background: red;
+  font-size:20px;
+  margin: 5px;
+}
+
 /*ALL tables' coloring and styles*/
 table {
   border-collapse: collapse;
