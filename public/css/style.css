@@ -46,6 +46,7 @@ body {
 }
 
 li a {
+  text-align: right;
   font-style: italic;
   display: block;
   width: 60px;
