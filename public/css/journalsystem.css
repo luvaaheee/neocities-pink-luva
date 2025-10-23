@@ -1,0 +1,48 @@
+body {
+   font-family: verdana;
+   font-size: 14px;
+   width: 750px;
+   margin-left: auto;
+   margin-right: auto;
+   line-height: 20px;
+}
+
+main {
+   padding: 20px;
+   margin-top: 20px;
+   margin-bottom: 20px;
+   border: 4px solid black;
+}
+
+h1{
+   font-weight: bold;
+   font-size: 20px;
+   text-align: center;
+   letter-spacing: 1px;
+}
+
+h2{
+   font-style: italic;
+   font-size: 15px;
+   letter-spacing: 1px;
+   border: 1px solid black;
+   padding: 3px;
+   background-color: black;
+   color: white;
+   text-align: center;
+}
+
+img {
+   margin: 1px;
+   width: 130px;
+   border:2px solid black;
+}
+
+a{
+   color: black;
+}
+
+a:hover{
+   color: white;
+   background: black;
+}
