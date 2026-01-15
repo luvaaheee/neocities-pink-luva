@@ -1,38 +1,29 @@
 body {
-  background: url(https://file.garden/ZdmNLegxzVCR-8F4/backgrounds/tumblr_f81d86a7b72bdd4b58fb97aaa9f051ac_ae788eaf_540.png) repeat fixed;
+  background-color: white;
   font-family: monospace;
   padding: 5px;
   font-size: 13px;
 }
 
-.parent { 
-  width: 1030px; 
-  margin: auto;
+.parent {  
+  width: 1500px;
+  margin-inline: auto;
   height: auto;
 }
 
 .content{
-  box-sizing: border-box;
-  background: rgba(0, 0, 0, 0.5);
-  color: white;
-  border: 1PX solid red;
   padding: 30px;
-  text-align: center;
 } 
 
 img {
-  padding: 6px;
-  height: 200px;
+  padding: 10px;
+  height: 300px;
 }
 
-img:hover {
-  box-shadow: 0 0 2px 2px rgba(253, 0, 44, 0.99);
-    
-}
 
 /*for links in parent*/
 a{
-  color: red
+  color: black
 }
 
 a:hover {
