@@ -1,32 +1,36 @@
 body {
-  background-color: white;
+  background-color: #161616;
+  font-size: 15px;
+  color: white;
   font-family: monospace;
-  padding: 5px;
-  font-size: 13px;
 }
 
-.parent {  
-  width: 1500px;
-  margin-inline: auto;
-  height: auto;
-}
-
-.content{
-  padding: 30px;
+.parent{
+  display: flex;
+  justify-content: center;
+  gap: 5px;
 } 
 
-img {
-  padding: 10px;
-  height: 300px;
+.content{ 
+  max-width: 600px;
 }
 
+img {
+  border-radius: 4px;
+  padding: 7px;
+  height: 140px;
+}
+
+img:hover {
+  box-shadow: 0 0 2px 2px rgb(239, 142, 158);
+}
 
 /*for links in parent*/
-a{
-  color: black
+a {
+  color: hsl(281, 100%, 78%);
 }
 
 a:hover {
-  color: red;
-  text-shadow: rgba(255,0,0,0.82) 2px 0 2px;
+  color: hsl(281, 86%, 78%);
+  text-shadow: rgb(236, 105, 248);
 }

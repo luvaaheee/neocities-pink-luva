@@ -1,124 +1,88 @@
 body {
-  background: url(https://file.garden/ZdmNLegxzVCR-8F4/backgrounds/tumblr_f81d86a7b72bdd4b58fb97aaa9f051ac_ae788eaf_540.png)
-    repeat fixed;
+  background: #161616;
   font-family: monospace;
-  padding: 5px;
-  font-size: 12.5px;
+  font-size: 11px;
 }
 
-.parent {
-  /*main grid parent, holds navbar, content, etc*/
-  display: grid;
-  grid-template-columns: 0.3fr 2fr 0.3fr; 
-  grid-template-rows: 0.2fr 1.8fr; 
-  align-content: start;
-  gap: 5px 5px;
-  height: 700px;
-  width: 700px; 
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
+.parent {  
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+/*main - where text goes*/
+
+.content{ 
+  max-width: 470px;
 }
 
-.content {
-  /*where all images, texts, etc go into */
-  grid-area: 2 / 2 / 3 / 3;
-  box-sizing: border-box;
-  border: 1px solid red;
-  border-bottom-left-radius: 30px;
-  border-top-right-radius: 30px;
-  padding: 20px;
-  height: 700px;
-  width: 600px;
-  overflow: scroll;
-  word-spacing: 4px;
+.main{
   color: white;
-  background: black;
+  padding: 20px;
+  overflow: scroll;
+} 
+
+.sidebar {
+  color: white;
+  width: 70px;
 }
 
-.misc { grid-area: 2 / 3 / 3 / 4; }
-
-.header {
-  grid-area: 1 / 2 / 2 / 3;
-  box-sizing: border-box;
-  font-size: 14px;
-  color: red;
-  font-family: arial;
-  font-style: italic;
-  text-align: left;
-  letter-spacing: 8px;
-  align-items: end;
+.links{
+  text-align: center;
 }
 
-#navbar {
-  grid-area: 2 / 1 / 3 / 2;
+.date {
+  color: rgb(239, 142, 158);
 }
 
-/*navbar coloring*/
-ul {
-  box-sizing: border-box;
+.entry {
+  border-bottom: 1px solid white;
+  padding-bottom: 10px;
+}
+
+/*navbar/sidebar coloring*/
+ ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  width: 80px;
+  width: 70px;
   font-size: 12px;
+}
+
+li a {
+  text-align: right;
+  font-style: italic;
+  display: block;
+  width: 60px;
+  color: rgb(239, 142, 158);
+  padding: 5px 5px;
+  text-decoration: none;
+  border-bottom: 1px solid rgb(239, 142, 158);
 }
 
 li:last-child {
   border-bottom: none;
 }
 
-li a {
-  font-style: italic;
-  display: block;
-  width: 70px;
-  color: red;
-  padding: 5px 5px;
-  text-decoration: none;
-  text-align: right;
-  border-bottom: 1px solid red;
-}
-
 li a:hover {
-  color: red;
+  color: hsl(281, 86%, 78%);
 }
 
-.footer {
-  justify-self: center;
-  align-self: end;
-  grid-area: 6 / 2 / 7 / 6;
-}
-/*  ^^^for gridlayout and format of ALL texts ^^^  */
-
-.pages { /*in diary*/
-  background: url(https://file.garden/ZdmNLegxzVCR-8F4/backgrounds/tumblr_1a1817a14106d62cf687c5abb1026745_579099bb_1280.webp)
-    repeat fixed;
-  color: white;
-  width: 80px;
-  padding: 10px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  border: 1px solid red;
-  box-sizing: border-box;
-  border-top-right-radius: 15px;
-  border-bottom-left-radius: 15px;
+/*link coloring*/
+a {
+  color: hsl(281, 100%, 78%);
 }
 
-/**pages that have buttons**/
-.buttons{
-  display: flex;
-  justify-content: center;
+a:visited {
+  color: hsl(281, 100%, 78%);
 }
 
-.page{
-  color: pink;
-  background: red;
-  font-size:20px;
-  margin: 5px;
+a:hover{
+  color:hsl(281, 100%, 78%);
+  text-shadow: rgb(236, 105, 248);
 }
 
 /*ALL tables' coloring and styles*/
+
 table {
   border-collapse: collapse;
   font-family: arial;
@@ -126,11 +90,11 @@ table {
 }
 
 th {
-  color: red;
+  color: rgb(239, 142, 158);
   padding: 6px;
   font-style: italic;
-  border-bottom: 1.5px solid red;
-  border-top: 1.5px solid red;
+  border-bottom: 1.5px solid rgb(239, 142, 158);
+  border-top: 1.5px solid rgb(239, 142, 158);
 }
 
 td {
@@ -139,7 +103,7 @@ td {
   border-bottom: 0.8px dashed white;
 }
 td>a {
-  color: red;
+  color: hsl(281, 100%, 78%);
   font-style: italic;
 }
 
@@ -149,56 +113,56 @@ td + td {
 
 .glance { /*table in about me section*/
   text-align: right;
-  border: 1px solid red;
+  border: 1px solid rgb(239, 142, 158);
 }
 
 /*ALL details & summary expands*/
+
 details summary {
   cursor: pointer;
 }
 
 details img {
-  border-radius: 5px;
-  border: 1px solid red;
+  border: 1px solid rgb(239, 142, 158);
   width: 130px;
 }
 
 details > p {
   color: white;
   padding: 10px;
-  border: 1px solid red;
-  border-bottom-left-radius: 15px;
-  border-top-right-radius: 15px;
+  border: 1px solid rgb(239, 142, 158);
   letter-spacing: 0.3px;
   line-height: 14px;
 }
 
 details > summary:hover {
-  color: red;
-  text-shadow: rgba(255, 0, 0, 0.82) 1px 0 1px;
+  color: hsl(281, 100%, 78%);
+  text-shadow: rgb(236, 105, 248); 1px 0 1px;
 }
 
 summary {
   list-style-type: "> ";
 }
 
-/*in diary*/
-.date {
-  color: red;
-  padding: 5px;
-}
-
-.entry {
-  color: white;
-  width: auto;
-}
-
 /*for ALL links in parent*/
 a {
-  color: red;
+  color: hsl(281, 100%, 78%);
 }
 
 a:hover {
-  color: hotpink;
-  text-shadow: rgba(255, 0, 0, 0.82) 1px 0 1px;
+  color: hsl(281, 86%, 78%);
+  text-shadow: rgb(236, 105, 248);
+}
+
+/**pages that have buttons**/
+.buttons{
+  display: flex;
+  justify-content: center;
+}
+
+.page{
+  color: black;
+  background: rgb(255, 255, 255);
+  font-size: 20px;
+  margin: 5px;
 }
