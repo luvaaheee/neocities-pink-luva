@@ -61,11 +61,11 @@ li a:hover {
 
 /*link coloring*/
 a {
-  color: hsl(281, 100%, 78%);
+  color: rgb(239, 142, 158)
 }
 
 a:visited {
-  color: rgb(200, 25, 253);
+  color: rgb(239, 142, 158);
 }
 
 a:hover{

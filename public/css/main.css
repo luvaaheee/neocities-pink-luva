@@ -74,7 +74,7 @@ a {
 }
 
 a:visited {
-  color: hsl(281, 100%, 78%);
+  color:rgb;
 }
 
 a:hover{
@@ -147,7 +147,11 @@ summary {
 
 /*for ALL links in parent*/
 a {
-  color: hsl(281, 100%, 78%);
+  color: rgb(239, 142, 158);
+}
+
+a:visited {
+  color: rgb(239, 142, 158)
 }
 
 a:hover {
