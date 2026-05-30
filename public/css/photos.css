@@ -21,16 +21,12 @@ img {
   height: 140px;
 }
 
-img:hover {
-  box-shadow: 0 0 2px 2px rgb(239, 142, 158);
-}
-
 /*for links in parent*/
 a {
   color: hsl(281, 100%, 78%);
 }
 
-a:hover {
-  color: hsl(281, 86%, 78%);
-  text-shadow: rgb(236, 105, 248);
+a:hover{
+  color:hsl(281, 100%, 78%);
+  text-shadow: rgb(200, 25, 253) 1px 0 1px;
 }

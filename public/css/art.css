@@ -21,10 +21,6 @@ img {
   height: 140px;
 }
 
-img:hover {
-  box-shadow: 0 0 2px 2px rgb(239, 142, 158);
-}
-
 /*for links in parent*/
 a {
   color: hsl(281, 100%, 78%);
