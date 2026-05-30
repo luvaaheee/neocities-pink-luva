@@ -2,6 +2,7 @@ body {
   background: #161616;
   font-family: monospace;
   font-size: 11px;
+  color: white;
 }
 
 .parent {  
@@ -26,17 +27,8 @@ body {
   width: 70px;
 }
 
-.links{
+.webring{
   text-align: center;
-}
-
-.date {
-  color: rgb(239, 142, 158);
-}
-
-.entry {
-  border-bottom: 1px solid white;
-  padding-bottom: 10px;
 }
 
 /*navbar/sidebar coloring*/
@@ -73,96 +65,38 @@ a {
 }
 
 a:visited {
-  color: hsl(281, 100%, 78%);
+  color: rgb(200, 25, 253);
 }
 
 a:hover{
   color:hsl(281, 100%, 78%);
-  text-shadow: rgb(236, 105, 248);
+  text-shadow: rgb(200, 25, 253) 1px 0 1px;
 }
 
-/*ALL tables' coloring and styles*/
+/*floating divs- site updates and currently doing & chatbox */
 
-table {
-  border-collapse: collapse;
-  font-family: arial;
-  font-size: 12px;
-}
-
-th {
-  color: rgb(239, 142, 158);
-  padding: 6px;
-  font-style: italic;
-  border-bottom: 1.5px solid rgb(239, 142, 158);
-  border-top: 1.5px solid rgb(239, 142, 158);
-}
-
-td {
-  padding: 4px;
-  text-align: left;
-  border-bottom: 0.8px dashed white;
-}
-td>a {
-  color: hsl(281, 100%, 78%);
-  font-style: italic;
-}
-
-td + td {
-  text-align: right;
-}
-
-.glance { /*table in about me section*/
-  text-align: right;
-  border: 1px solid rgb(239, 142, 158);
-}
-
-/*ALL details & summary expands*/
-
-details summary {
-  cursor: pointer;
-}
-
-details img {
-  border: 1px solid rgb(239, 142, 158);
-  width: 130px;
-}
-
-details > p {
-  color: white;
-  padding: 10px;
-  border: 1px solid rgb(239, 142, 158);
-  letter-spacing: 0.3px;
-  line-height: 14px;
-}
-
-details > summary:hover {
-  color: hsl(281, 100%, 78%);
-  text-shadow: rgb(236, 105, 248); 1px 0 1px;
-}
-
-summary {
-  list-style-type: "> ";
-}
-
-/*for ALL links in parent*/
-a {
-  color: hsl(281, 100%, 78%);
-}
-
-a:hover {
-  color: hsl(281, 86%, 78%);
-  text-shadow: rgb(236, 105, 248);
-}
-
-/**pages that have buttons**/
-.buttons{
-  display: flex;
-  justify-content: center;
-}
-
-.page{
-  color: black;
-  background: rgb(255, 255, 255);
-  font-size: 20px;
+.chatbox {
   margin: 5px;
+}
+
+.updates {
+  box-sizing: border-box;
+  padding: 20px;
+  height: 140px;
+  color: white;
+  position: relative;
+}
+
+.toro {
+  position: absolute;
+  width: 180px;
+  bottom: 20px;
+  right: 10px;
+}
+
+.dottie {
+  width: 120px;
+  position: absolute;
+  bottom: 20px;
+  left: 10px;
 }
