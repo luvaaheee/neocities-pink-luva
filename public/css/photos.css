@@ -7,6 +7,7 @@ body {
 
 .parent{
   justify-content: center;
+  max-width: 1000px;
 } 
 
 .row {
