@@ -1,8 +1,8 @@
 body {
-  background: #161616;
+  background: white;
   font-family: monospace;
   font-size: 11px;
-  color: white;
+  color: black;
 }
 
 .parent {  
@@ -17,13 +17,13 @@ body {
 }
 
 .main{
-  color: white;
+  color: black;
   padding: 20px;
   overflow: scroll;
 } 
 
 .sidebar {
-  color: white;
+  color: black;
   width: 70px;
 }
 
@@ -83,7 +83,7 @@ a:hover{
   box-sizing: border-box;
   padding: 20px;
   height: 140px;
-  color: white;
+  color: black;
   position: relative;
 }
 

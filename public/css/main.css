@@ -1,8 +1,8 @@
 body {
-  background: #161616;
+  background: #white;
   font-family: monospace;
   font-size: 11px;
-  color: white;
+  color: black;
 }
 
 .parent {  
@@ -18,13 +18,13 @@ body {
 }
 
 .main{
-  color: white;
+  color: black;
   padding: 20px;
   overflow: scroll;
 } 
 
 .sidebar {
-  color: white;
+  color: black;
   width: 70px;
 }
 
@@ -37,7 +37,7 @@ body {
 }
 
 .entry {
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid black;
   padding-bottom: 10px;
 }
 
@@ -102,7 +102,7 @@ th {
 td {
   padding: 4px;
   text-align: left;
-  border-bottom: 0.8px dashed white;
+  border-bottom: 0.8px dashed black;
 }
 td>a {
   color: hsl(281, 100%, 78%);
@@ -130,7 +130,7 @@ details img {
 }
 
 details > p {
-  color: white;
+  color: black;
   padding: 10px;
   border: 1px solid rgb(239, 142, 158);
   letter-spacing: 0.3px;
@@ -168,7 +168,7 @@ a:hover {
 
 .page{
   color: black;
-  background: rgb(255, 255, 255);
+  background: white;
   font-size: 17px;
   margin: 5px;
 }
