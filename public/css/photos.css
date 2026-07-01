@@ -19,7 +19,7 @@ body {
 img {
   border-radius: 4px;
   padding: 7px;
-  height: 140px;
+  width: 200px;
 }
 
 /*for links in parent*/
